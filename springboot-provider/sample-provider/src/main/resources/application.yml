@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: springboot-dubbo-name
+
+dubbo:
+  application:
+    name: springboot-provider
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+#    address: N/A
+    address: zookeeper://121.36.5.129:2181

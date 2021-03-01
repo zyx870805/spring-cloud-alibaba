@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-sentinel-sample
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 192.168.6.110:7777
+      datasource:
+        - nacos:
+            server-addr: 192.168.6.111:8848,192.168.6.112:8848,192.168.6.113:8848
+            data-id: ${spring.application.name}-sentinel-flow
+            group-id: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow

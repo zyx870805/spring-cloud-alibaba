@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: spring-cloud-nacos-sample
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.6.111:8848,192.168.6.112:8848,192.168.6.113:8848
+      register-enabled: true
+dubbo:
+  scan:
+    base-packages: com.example
+  protocol:
+    name: dubbo
+    port: 20880
+  registry:
+    address: spring-cloud://localhost

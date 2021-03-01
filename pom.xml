@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.3</version>
+		<version>2.1.11.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -17,6 +17,20 @@
 	<modules>
 		<module>chapter3</module>
         <module>redis-spring-boot-starter</module>
+        <module>user-service</module>
+		<module>order-service</module>
+        <module>springboot-provider</module>
+		<module>springboot-consumer</module>
+		<module>spring-cloud-dubbo-sample</module>
+        <module>Driver</module>
+		<module>Mysql-Driver</module>
+        <module>spring-boot-nacos-discovery</module>
+        <module>spring-boot-dubbo-nacos-sample</module>
+		<module>spring-cloud-nacos-sample</module>
+        <module>spring-boot-nacos-config</module>
+        <module>spring-cloud-nacos-config-sample</module>
+        <module>sentinel</module>
+        <module>spring-cloud-sentinel-sample</module>
     </modules>
 	<properties>
 		<java.version>1.8</java.version>
